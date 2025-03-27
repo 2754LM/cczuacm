@@ -3,7 +3,7 @@ import { DefaultTheme, defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head:[
-    ['link',{rel:'icon',href:'/favicon.ico'}]
+    ['link',{rel:'icon',href:'/cczuacm/favicon.ico'}]
     ],
   title: "CCZU ACM",
   description: "CCZU ACM",
