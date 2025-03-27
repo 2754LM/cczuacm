@@ -18,14 +18,14 @@ hero:
       link: /guide/index
     - theme: alt
       text: 关于集训队
-      link: /aboue/index
+      link: /team/intro
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 😎
+    title: 我们是？
+    details: 超酷的ACM选手，为同学们提供算法交流、训练平台，多次代表学校出征程序设计竞赛(CCPC，ICPC等)。
+  - icon: 🎉
+    title: 加入我们
+    details: 我们随时欢迎感兴趣的同学加入我们！算法协会q群：311107699，群中资料齐全，大佬解答在线问题~
 ---
 

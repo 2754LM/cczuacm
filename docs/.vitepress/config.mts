@@ -10,7 +10,6 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   base: '/cczuacm/',
-
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon.ico',
@@ -18,27 +17,41 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '入门指南', link: '/guide/index' },
-      { text: '竞赛成绩', link: '/awards/index' },
-      { 
-        text: '关于集训队', 
-        items: [
-          { text: '集训队简介', link: '/about/introduction' },
-          { text: '集训队章程', link: '/about/constitution' }
-
-        ]
-      }
-
+      { text: '集训队简介', link: '/team/intro' },
+      { text: '往年成绩', link: '/team/award' },
+      { text: '友链', link: '/other/friendlink' },
     ],
-
     sidebar: [
       {
-        text: 'Examples',
+        text: '算法学习',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '入门指南', link: '/guide/index' },
+        ]
+      },
+      {
+        text: '集训队',
+        items: [
+          { text: '集训队简介', link: '/team/intro' },
+          { text: '如何加入', link: '/team/join' },
+          { text: '往年成绩', link: '/team/award' },
+          { text: '队员去向', link: '/team/member' },
+          { text: '集训队章程', link: '/team/rules' }
+        ]
+      },
+      {
+        text: '杂项',
+        items: [
+          { text: '友链', link: '/other/friendlink' },
+          
         ]
       }
     ],
+    footer: {
+      copyright: 'Copyright © 2025 CCZU ACM Team'
+    },
+    search: { provider: 'local' },
+    externalLinkIcon: true,
+    outline: { level: 'deep', label: '目录' },
     editLink: {
       pattern: 'https://github.com/2754LM/cczuacm/edit/main/docs/:path',
       text: '在 GitHub 上编辑本页'
