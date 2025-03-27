@@ -1,34 +1,15 @@
-import { defineConfig } from 'vitepress'
+import { DefaultTheme, defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head:[
+    ['link',{rel:'icon',href:'/favicon.ico'}]
+    ],
   title: "CCZU ACM",
   description: "CCZU ACM",
-
   lastUpdated: true,
   cleanUrls: true,
   base: '/cczuacm/',
-  sitemap: {
-    hostname: 'https://kano07.icu/cczuacm/'
-  },
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    // 修正渲染
-    ['style', {}, `mjx-container > svg { display: inline-block; }`],
-    // Google Analytics
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-2ZJJQNKSP7' }],
-    ['script', {}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-2ZJJQNKSP7');`],
-    // Baidu Analytics
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-3xs6buZQq7' }],
-    // 360 Analytics
-    ['meta', { name: '360-site-verification', content: '5f6b7e089e84559f4236b519637a2d50' }],
-    // Sougou Analytics
-    ['meta', { name: 'sogou_site_verification', content: 'BCj2PJBWHq' }],
-    // Bytedance Analytics
-    ['meta', { name: 'bytedance-verification-code', content: 'TKlifQgLT+gHFABWwZMH' }],
-    // Shenma Analytics
-    ['meta', { name: 'shenma-site-verification', content: '087f881b8e2608d58766e411ceef89f0_1688214039' }],
-  ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
