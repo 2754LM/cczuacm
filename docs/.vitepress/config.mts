@@ -9,7 +9,7 @@ export default defineConfig({
   description: "CCZU ACM",
   lastUpdated: true,
   cleanUrls: true,
-  base: '/cczuacm/',
+  base: '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon.ico',
