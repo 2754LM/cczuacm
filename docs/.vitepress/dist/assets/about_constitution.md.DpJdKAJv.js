@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as e}from"./chunks/framework.Dh1jimFm.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"about/constitution.md","filePath":"about/constitution.md","lastUpdated":null}'),a={name:"about/constitution.md"};function n(s,c,i,r,d,p){return e(),o("div")}const l=t(a,[["render",n]]);export{_ as __pageData,l as default};
