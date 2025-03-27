@@ -35,7 +35,8 @@ export default defineConfig({
           { text: '如何加入', link: '/team/join' },
           { text: '往年成绩', link: '/team/award' },
           { text: '队员去向', link: '/team/member' },
-          { text: '集训队章程', link: '/team/rules' }
+          { text: '集训队章程', link: '/team/rules' },
+          { text: '支持我们', link: '/team/support' }
         ]
       },
       {
