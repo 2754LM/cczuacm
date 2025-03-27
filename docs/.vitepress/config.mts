@@ -7,7 +7,7 @@ export default defineConfig({
 
   lastUpdated: true,
   cleanUrls: true,
-
+  base: '/cczuacm/',
   
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 
