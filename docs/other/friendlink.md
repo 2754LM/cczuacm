@@ -10,7 +10,8 @@
 ## 个人博客
 
 以下介绍不分先后
-[kano07](https://2754lm.github.io/)
+
+- [kano07](https://2754lm.github.io/)
 
 
 想登友链的欢迎联系我。
