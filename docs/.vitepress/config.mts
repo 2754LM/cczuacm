@@ -11,7 +11,7 @@ export default defineConfig({
   cleanUrls: true,
   base: '/',
   sitemap: {
-    hostname: 'http://cczuacm.cn/'
+    hostname: 'https://cczuacm.cn/'
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
