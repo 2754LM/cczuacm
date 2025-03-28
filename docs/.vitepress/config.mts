@@ -10,10 +10,12 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   base: '/',
+  sitemap: {
+    hostname: 'http://cczuacm.cn/'
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon.ico',
-    
     nav: [
       { text: '首页', link: '/' },
       { text: '入门指南', link: '/guide/index' },
