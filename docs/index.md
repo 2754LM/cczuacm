@@ -29,6 +29,6 @@ features:
     details: 我们随时欢迎感兴趣的同学加入我们！算法协会q群：311107699，群中资料齐全，大佬解答在线问题~
   - icon: 📆
     title: 最新日程
-    details: 2025JSCPC报名，地点南信，时间6.1号，费用800一队。截止日期4.5号，有需求请填写[此文档](https://docs.qq.com/sheet/DRmRFSVRQQXR2Snhr?tab=BB08J2)。
+    details: 2025JSCPC报名，地点南信，时间6.1号，费用800一队。截止日期4.5号，报名请加入算法协会。
 ---
 
