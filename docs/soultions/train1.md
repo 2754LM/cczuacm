@@ -1,4 +1,4 @@
-# 第一场集训
+# 第一场集训题解
 
 ## A [Stair, Peak, or Neither?](https://codeforces.com/group/X3xH4iIOfS/contest/599687/problem/A)
 
