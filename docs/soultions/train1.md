@@ -72,6 +72,8 @@ cout<<endl;
 
 详细复杂度证明看可以[cf题解](https://codeforces.com/blog/entry/127664)。
 
+当然也可以提前跑出**二进制十进制数**，然后遇到每个 $n$ 的时候，去枚举他的除数，能被除就尽量除。
+
 ```cpp
 set<ll> st;
 void dfs(string& s, int start) {
