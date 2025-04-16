@@ -173,31 +173,21 @@ void solve() {
 
 考点：二分，前缀和
 
-可以发现任意矩形必然存在一条边的长度，等于两条线段 $a_{i},a_{j}(i<j)$之间的距离，即 $a_j-a_i$。
+可以发现任意矩形必然存在一条边的长度，等于两条线段 $a_{i},a_{j}(i<j)$ 之间的距离，即 $a_j-a_i$。
 
-${那么以a_{j}-a_{i}为长可以构成\left\{
-\begin{aligned}
-&m-(a_{j}-a_{i}-k)+1&  \\
-&0&
-\end{aligned}
-\right.个矩形} $。
+${那么以a_{j}-a_{i}为长可以构成\left\{\begin{aligned}&m-(a_{j}-a_{i}-k)+1&  \\&0&\end{aligned}\right.个矩形} $。
 
-${以a_{j}-a_{i}为宽可以构成\left\{
-\begin{aligned}
-&m-(a_{j}-a_{i}+k)+1& \\
-0
-\end{aligned}
-\right.}个矩形$。
+${以a_{j}-a_{i}为宽可以构成\left\{\begin{aligned}&m-(a_{j}-a_{i}+k)+1& \\0\end{aligned}\right.}个矩形$。
 
 最后的答案就是：
 
-$${\sum\limits_{i=1}^{n}\sum\limits_{\substack{j=i+1\\m-(a_{j}-a_{i}+k)+1>0}}^{n}(m-(a_{j}-a_{i}+k)+1)+\sum\limits_{i=1}^{n}\sum\limits_{\substack{j=i+1\\m-(a_{j}-a_{i}-k)+1>0\\ a_{j}-a_{i}>k}}^{n}(m-(a_{j}-a_{i}-k)+1)}$$
+${\sum\limits_{i=1}^{n}\sum\limits_{\substack{j=i+1\\m-(a_{j}-a_{i}+k)+1>0}}^{n}(m-(a_{j}-a_{i}+k)+1)+\sum\limits_{i=1}^{n}\sum\limits_{\substack{j=i+1\\m-(a_{j}-a_{i}-k)+1>0\\ a_{j}-a_{i}>k}}^{n}(m-(a_{j}-a_{i}-k)+1)}$
 
-$${\sum\limits_{i=1}^{n}\sum\limits_{j=i+1}^{r_{i}}(m-(a_{j}-a_{i}+k)+1)}+{\sum\limits_{i=1}^{n}\sum\limits_{j=L_{i}}^{R_{i}}(m-(a_{j}-a_{i}-k)+1)}$$
+${\sum\limits_{i=1}^{n}\sum\limits_{j=i+1}^{r_{i}}(m-(a_{j}-a_{i}+k)+1)}+{\sum\limits_{i=1}^{n}\sum\limits_{j=L_{i}}^{R_{i}}(m-(a_{j}-a_{i}-k)+1)}$
 
 其中 $r_i$ 是使得 $m-(a_{j}-a_{i}+k)+1>0$ 成立的 $j$ 的最大值，$L_i$ 是使得 $a_{j}-a_{i}>k$ 成立的最小值，$R_i$ 是使得 $m-(a_{j}-a_{i}-k)+1>0$ 成立的最大值，都需要通过二分求得。
 
-$${\sum\limits_{i=1}^{n}(r_{i}-i)*(m+a_{i}-k+1)-\sum\limits_{j=i}^{r_{i}}a_{j}+\sum\limits_{i=1}^{n}(R_{i}-L_{i}+1)*(m+a_{i}+k+1)-\sum\limits_{i=L_{i}}^{R_{i}}a_{j}}$$
+${\sum\limits_{i=1}^{n}(r_{i}-i)*(m+a_{i}-k+1)-\sum\limits_{j=i}^{r_{i}}a_{j}+\sum\limits_{i=1}^{n}(R_{i}-L_{i}+1)*(m+a_{i}+k+1)-\sum\limits_{i=L_{i}}^{R_{i}}a_{j}}$
 
 ${对于 \sum{a_j} 项的处理，使用前缀和维护即可}$。
 
