@@ -60,7 +60,8 @@ function updateHomepage(todayProblem) {
   // 读取原始内容
   let content = fs.readFileSync(HOMEPAGE_PATH, 'utf8');
   // 更新最新日程部分
-  const newLatestInfo = `每日一题已上线！每天一道精选算法题，提升你的编程能力。今日题目：${todayProblem.title} - [查看详情](/daily/${todayProblem.date}.md)`;
+  const newLatestInfo = `每日一题已上线！每天一道精选算法题，提升你的编程能力。今日题目：${todayProblem.title}`;
+  
   const parts = content.split('details: ');
   const afterDetails = parts[3].split('\n');
   const updatedContent = [
