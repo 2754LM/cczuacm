@@ -1,0 +1,94 @@
+{
+  "problems": [
+    {
+      "id": "leetcode-1",
+      "title": "两数之和",
+      "date": "2025-05-21",
+      "difficulty": "简单",
+      "tags": ["数组", "哈希表"],
+      "source": "LeetCode 1",
+      "content_file": "two-sum.md"
+    },
+    {
+      "id": "leetcode-1143",
+      "title": "最长公共子序列",
+      "date": "2025-05-20",
+      "difficulty": "中等",
+      "tags": ["动态规划", "字符串"],
+      "source": "LeetCode 1143",
+      "content_file": "longest-common-subsequence.md"
+    },
+    {
+      "id": "leetcode-20",
+      "title": "有效的括号",
+      "date": "2025-05-19",
+      "difficulty": "简单",
+      "tags": ["栈", "字符串"],
+      "source": "LeetCode 20",
+      "content_file": "valid-parentheses.md"
+    },
+    {
+      "id": "leetcode-53",
+      "title": "最大子数组和",
+      "date": "2025-05-18",
+      "difficulty": "简单",
+      "tags": ["数组", "动态规划", "分治"],
+      "source": "LeetCode 53",
+      "content_file": "maximum-subarray.md"
+    },
+    {
+      "id": "leetcode-121",
+      "title": "买卖股票的最佳时机",
+      "date": "2025-05-17",
+      "difficulty": "简单",
+      "tags": ["数组", "动态规划"],
+      "source": "LeetCode 121",
+      "content_file": "best-time-to-buy-and-sell-stock.md"
+    },
+    {
+      "id": "leetcode-15",
+      "title": "三数之和",
+      "date": "2025-05-16",
+      "difficulty": "中等",
+      "tags": ["数组", "双指针", "排序"],
+      "source": "LeetCode 15",
+      "content_file": "three-sum.md"
+    },
+    {
+      "id": "leetcode-206",
+      "title": "反转链表",
+      "date": "2025-05-15",
+      "difficulty": "简单",
+      "tags": ["链表", "递归"],
+      "source": "LeetCode 206",
+      "content_file": "reverse-linked-list.md"
+    },
+    {
+      "id": "leetcode-70",
+      "title": "爬楼梯",
+      "date": "2025-05-14",
+      "difficulty": "简单",
+      "tags": ["动态规划"],
+      "source": "LeetCode 70",
+      "content_file": "climbing-stairs.md"
+    },
+    {
+      "id": "leetcode-98",
+      "title": "验证二叉搜索树",
+      "date": "2025-05-13",
+      "difficulty": "中等",
+      "tags": ["树", "深度优先搜索", "二叉搜索树"],
+      "source": "LeetCode 98",
+      "content_file": "validate-binary-search-tree.md"
+    },
+    {
+      "id": "leetcode-146",
+      "title": "LRU 缓存",
+      "date": "2025-05-12",
+      "difficulty": "中等",
+      "tags": ["设计", "哈希表", "链表", "双向链表"],
+      "source": "LeetCode 146",
+      "content_file": "lru-cache.md"
+    }
+  ]
+} 

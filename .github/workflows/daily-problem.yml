@@ -1,0 +1,50 @@
+name: 每日一题自动更新
+
+on:
+  schedule:
+    # 每天北京时间凌晨0:05运行
+    - cron: '5 16 * * *'
+  # 允许手动触发工作流
+  workflow_dispatch:
+
+jobs:
+  update-daily-problem:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: 检出代码
+        uses: actions/checkout@v3
+        
+      # 设置Node.js环境
+      - name: 设置Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+          
+      # 安装依赖
+      - name: 安装依赖
+        run: npm ci
+        
+      # 创建必要的目录
+      - name: 创建目录
+        run: mkdir -p docs/daily/database/content
+        
+      # 运行每日一题更新脚本
+      - name: 更新每日一题
+        run: node scripts/update_daily_problem.js
+        
+      # 提交更改
+      - name: 提交更改
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/
+          git commit -m "自动更新每日一题 $(date +'%Y-%m-%d')" || echo "没有更改需要提交"
+          
+      # 推送更改
+      - name: 推送更改
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }} 
