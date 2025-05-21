@@ -1,0 +1,77 @@
+import java.io.*;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+class Kattio extends PrintWriter {
+    private final BufferedReader r;
+    private StringTokenizer st;
+
+    // 标准 IO
+    public Kattio() {
+        this(System.in, System.out);
+    }
+
+    public Kattio(InputStream i, OutputStream o) {
+        super(o);
+        r = new BufferedReader(new InputStreamReader(i));
+    }
+
+    // 文件 IO
+    public Kattio(String input, String output) throws IOException {
+        super(output);
+        r = new BufferedReader(new FileReader(input));
+    }
+
+    // 在没有其他输入时返回 null
+    public String next() {
+        try {
+            while (st == null || !st.hasMoreTokens())
+                st = new StringTokenizer(r.readLine());
+            return st.nextToken();
+        } catch (Exception ignored) {
+        }
+        return null;
+    }
+
+    public int nextInt() {
+        return Integer.parseInt(next());
+    }
+
+    public double nextDouble() {
+        return Double.parseDouble(next());
+    }
+
+    public long nextLong() {
+        return Long.parseLong(next());
+    }
+}
+
+public class Main {
+    static Kattio sc = new Kattio();
+    
+    static class T extends Thread {
+        @Override
+        public void run() {
+            var a = sc.nextInt();
+            var b = sc.nextInt();
+            sc.println(a + b);
+            sc.close();
+        }
+
+        public T(ThreadGroup group, Runnable task, String name, long stackSize) {
+            super(group, task, name, stackSize);
+        }
+    }
+
+    public void solve() {
+        T val = new T(null, null, "", Integer.MAX_VALUE);
+        val.start();
+    }
+
+    public static void main(String[] args) {
+        int t = 1;
+//        t = sc.nextInt();
+        for (int i = 0; i < t; i++) new Main().solve();
+        //--------------------------------------
+    }
+}
