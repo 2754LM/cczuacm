@@ -121,6 +121,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '入门指南', link: '/guide/index' },
+      { text: '每日一题', link: '/daily/index' },
       { text: '集训队简介', link: '/team/intro' },
       { text: '往年成绩', link: '/team/award' },
       { text: '友链', link: '/other/friendlink' },
@@ -130,6 +131,7 @@ export default defineConfig({
         text: '算法学习',
         items: [
           { text: '入门指南', link: '/guide/index' },
+          { text: '每日一题', link: '/daily/index' },
         ]
       },
       {
@@ -148,7 +150,7 @@ export default defineConfig({
         items: [
           { text: '比赛题解', link: '/other/solution' },
           { text: '友链', link: '/other/friendlink' },
-          
+          { text: '每日一题系统说明', link: '/other/daily-problem-system' }
         ]
       }
     ],
