@@ -59,19 +59,20 @@ function updateDailyIndex(problems) {
 function updateHomepage(todayProblem) {
   // 读取原始内容
   let content = fs.readFileSync(HOMEPAGE_PATH, 'utf8');
-  
   // 更新最新日程部分
   const newLatestInfo = `每日一题已上线！每天一道精选算法题，提升你的编程能力。今日题目：${todayProblem.title} - [查看详情](/daily/${todayProblem.date}.md)`;
+  const parts = content.split('details: ');
+  const afterDetails = parts[3].split('\n');
+  const updatedContent = [
+    parts[0] + 'details: ' + parts[1] + 'details: ' + parts[2] + 'details: ',
+    newLatestInfo,
+    afterDetails.slice(1).join('\n')
+  ].join('');
   
-  // 替换内容
-  const newContent = content.replace(
-    /details: (.*?)(?=\n)/,
-    `details: ${newLatestInfo}`
-  );
-  
-  fs.writeFileSync(HOMEPAGE_PATH, newContent, 'utf8');
+  fs.writeFileSync(HOMEPAGE_PATH, updatedContent, 'utf8');
   console.log('网站首页更新完成');
 }
+
 
 // 创建当天的题目页面
 function createTodayProblemPage(problem) {
