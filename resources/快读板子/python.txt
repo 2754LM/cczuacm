@@ -1,9 +1,0 @@
-import sys
-
-input = lambda: sys.stdin.readline().strip()  # 读一行字符串,并进行拆分成一个数组
-print = lambda d: sys.stdout.write(str(d) + " ")  # 注意可以自行补充换行符,也可以不用这个注释掉
-M = lambda: map(int, input().split())  # a,b=M() 即把这一行的若干个数转为int
-read = lambda: list(M())  # 读一行数据全部转为整数数组
-sys.setrecursionlimit(10 ** 5)  # 设置方法栈大小
-a,b = M()
-print(a+b)
