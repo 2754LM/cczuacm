@@ -105,8 +105,16 @@ export default defineConfig({
   },
   head:[
     ['link',{rel:'icon',href:'/favicon.ico'}],
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css', crossorigin: '' }]
-    ],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css', crossorigin: '' }],
+    [
+      'script',
+      {
+        defer: '',
+        src: 'https://cloud.umami.is/script.js',
+        'data-website-id': '4f901b62-46d3-4ac1-8ce9-ddc9a0f9f289'
+      }
+    ]
+  ],
   title: "CCZU ACM",
   description: "CCZU ACM",
   lastUpdated: true,
