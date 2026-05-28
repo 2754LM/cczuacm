@@ -1,5 +1,17 @@
 # 往年竞赛成绩
 
+## 2026-2027赛季
+### [2026 年江苏省大学生程序设计竞赛](https://board.xcpcio.com/provincial-contest/2026/jiangsu)
+| 队伍               |队员| 奖项 | 排名 |
+| :----------------- | :--- |:--- | :--- |
+|三个臭蓝名顶个LGM | 吴明轩, 侯飞, 刘泽鸿 | 银  | 42  |	
+|香辣鸡腿堡 |	许晨辉, 曲佳鹭, 汪辉| 铜  | 84  |	
+
+### [2026 年 ICPC 国际大学生程序设计竞赛全国邀请赛（武汉）暨湖北省赛](https://board.xcpcio.com/icpc/51st/wuhan-invitational?group=Invitational_participants)
+| 队伍               |队员| 奖项 | 排名 |
+| :----------------- | :--- |:--- | :--- |
+|	404name| 汪文健, 夏君哲, 韩琪霖 | 铜  | 78  |	
+
 ## 2025-2026赛季
 ### [「华为杯」2025 江苏省大学生程序设计竞赛](https://board.xcpcio.com/provincial-contest/2025/jiangsu)
 | 队伍               |队员| 奖项 | 排名 |
