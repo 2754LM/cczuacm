@@ -91,6 +91,9 @@ const customElements = [
 ]
 
 export default defineConfig({
+  lang: 'zh-CN',
+  title: "CCZU ACM | 常州大学 ACM 集训队",
+  description: "常州大学 ACM 集训队官网。专注算法竞赛训练，参加 ICPC 国际大学生程序设计竞赛、CCPC 中国大学生程序设计竞赛等。提供算法学习资料、入门指南、历年成绩、队员去向。欢迎对算法感兴趣的同学加入！",
   markdown: {
     config: (md) => {
       md.use(markdownItKatex)
@@ -106,6 +109,36 @@ export default defineConfig({
   head:[
     ['link',{rel:'icon',href:'/favicon.ico'}],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css', crossorigin: '' }],
+    ['meta', { name: 'keywords', content: '常州大学 ACM, CCZU ACM, ACM 集训队, 算法竞赛, ICPC, CCPC, 程序设计竞赛, 算法训练, 常州大学计算机, CCZU OJ, 算法协会' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'CCZU ACM | 常州大学 ACM 集训队' }],
+    ['meta', { property: 'og:description', content: '常州大学 ACM 集训队官网：算法竞赛训练、ICPC / CCPC 参赛、算法学习资料与入门指南。' }],
+    ['meta', { property: 'og:url', content: 'https://cczuacm.cn/' }],
+    ['meta', { property: 'og:site_name', content: 'CCZU ACM' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:image', content: 'https://cczuacm.cn/icpc.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:title', content: 'CCZU ACM | 常州大学 ACM 集训队' }],
+    ['meta', { name: 'twitter:description', content: '常州大学 ACM 集训队官网：算法竞赛训练、ICPC / CCPC 参赛、算法学习资料与入门指南。' }],
+    ['link', { rel: 'canonical', href: 'https://cczuacm.cn/' }],
+    [
+      'script',
+      {
+        type: 'application/ld+json',
+        'innerHTML': JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "常州大学 ACM 集训队",
+          "alternateName": "CCZU ACM",
+          "url": "https://cczuacm.cn/",
+          "description": "常州大学 ACM 程序设计竞赛集训队，参与 ICPC、CCPC 等算法竞赛。",
+          "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": "常州大学"
+          }
+        })
+      }
+    ],
     [
       'script',
       {
@@ -115,8 +148,6 @@ export default defineConfig({
       }
     ]
   ],
-  title: "CCZU ACM",
-  description: "CCZU ACM",
   lastUpdated: true,
   cleanUrls: true,
   base: '/',
